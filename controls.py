@@ -15,6 +15,7 @@ GPIO.setup(eastPin, GPIO.OUT)
 GPIO.setup(westPin, GPIO.OUT)
 GPIO.setup(trigPin, GPIO.OUT)
 
+# when Start Scan button is hit, this sequence will run
 
 for i in range(1):
     print("All On Lights On.")
