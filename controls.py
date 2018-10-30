@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import RPi.GPIO as GPIO
 import time
 
@@ -19,11 +17,10 @@ GPIO.setup(trigPin, GPIO.OUT)
 
 
 for i in range(1):
-
-	print("All On Lights On.")
+    print("All On Lights On.")
 	GPIO.output(northPin,southPin,eastPin,westPin, GPIO.HIGH)
 	time.sleep(2.0)
-	print.("Capturing All On Image")
+	print("Capturing All On Image")
 	GPIO.output(trigPin, GPIO.HIGH)
 	time.sleep(1.0)
 	GPIO.output(trigPin, GPIO.LOW)
@@ -33,7 +30,7 @@ for i in range(1):
 	print("North Lights On.")
 	GPIO.output(northPin, GPIO.HIGH)
 	time.sleep(2.0)
-	print.("Capturing North Image")
+	print("Capturing North Image")
 	GPIO.output(trigPin, GPIO.HIGH)
 	time.sleep(1.0)
 	GPIO.output(trigPin, GPIO.LOW)
@@ -43,7 +40,7 @@ for i in range(1):
 	print("South Lights On.")
 	GPIO.output(southPin, GPIO.HIGH)
 	time.sleep(2.0)
-	print.("Capturing South Image")
+	print("Capturing South Image")
 	GPIO.output(trigPin, GPIO.HIGH)
 	time.sleep(1.0)
 	GPIO.output(trigPin, GPIO.LOW)
@@ -53,7 +50,7 @@ for i in range(1):
 	print("East Lights On.")
 	GPIO.output(eastPin, GPIO.HIGH)
 	time.sleep(2.0)
-	print.("Capturing East Image")
+	print("Capturing East Image")
 	GPIO.output(trigPin, GPIO.HIGH)
 	time.sleep(1.0)
 	GPIO.output(trigPin, GPIO.LOW)
@@ -63,7 +60,7 @@ for i in range(1):
 	print("West Lights On.")
 	GPIO.output(westPin, GPIO.HIGH)
 	time.sleep(2.0)
-	print.("Capturing West Image")
+	print("Capturing West Image")
 	GPIO.output(trigPin, GPIO.HIGH)
 	time.sleep(1.0)
 	GPIO.output(trigPin, GPIO.LOW)
